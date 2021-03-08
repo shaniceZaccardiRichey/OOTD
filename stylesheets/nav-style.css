@@ -45,7 +45,8 @@
 }
 
 .navbar-links li:hover {
-	background-color: cornsilk;
+	background-color: rgba(157,54,21, 0.75);
+	border-bottom-color: 5px solid white; 
 }
 
 .nav-title {
@@ -66,64 +67,6 @@
 }
 
 
-
-
-body {
-	background-color: antiquewhite;
-	margin: 0;
-	padding: 0;
-}
-
-.profile-info {
-    display: grid;
-	margin-left: auto;
-	margin-right: auto;
-    grid-template-columns: 2fr 1fr 3fr;
-    grid-gap: 20px;
-}
-
-.profile-image {
-	display: grid;
-	justify-content: center;
-}
-
-.profile-image img {
-	width: 100%;
-}
-
-.profile-icons {
-	display: flex;
-  	justify-content: center;
-}
-
-.profile-icons a {
-	padding: 5px;
-}
-
-.picture-grid {
-	display: grid;
-	margin-left: auto;
-	margin-right: auto;
-	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-	grid-gap: 10px;
-	grid-row-gap: 0px;
-}
-
-
-.grid-box img {
-	width: 100%;
-}
-
-.central-content {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	width: 75%;
-	background-color: rgba(255,255,255,.5);
-	padding: 10px;
-	max-width: 1100px;
-}
 
 @media (Max-width: 600px) {
 	.toggle-button{
@@ -150,19 +93,17 @@ body {
 	}
 	
 	.navbar-links li a {
+		background-color: white;
 		padding: 5px;
 	}
 	
 	.navbar-links.active {
 		display: flex;
 	}
-	
-	.profile-spacer {
-		display: none;
-	}
-	
-	.profile-images {
-		grid-template-columns: 1fr 2fr;
+
+	.navbar-links li a:hover {
+		background-color: rgb(162,64,33);
+		border-bottom-color: 5px solid white; 
 	}
 	
 }

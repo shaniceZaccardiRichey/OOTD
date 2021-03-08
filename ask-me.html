@@ -2,28 +2,29 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="OOTDstyle.css">
-<script src="OOTDscript.js" defer></script>
+	
+<link rel="stylesheet" href="stylesheets/nav-style.css">
+<link rel="stylesheet" href="stylesheets/askme-style.css">
+<script src="nav-script.js" defer></script>
 <script src="https://kit.fontawesome.com/f1b4393c99.js" crossorigin="anonymous"></script>
+	
 <title>Ask Me</title>
 </head>
 
 <body>
 	<header>
 		<nav class="navbar">
-			<div class="home-nav"><a href="OOTD.html"><i class="fas fa-home fa-lg" id="nav-home"></i></a></div>
+			<div class="nav-title">OOTD</div>
 			
 			<a href="#" class="toggle-button">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
+				<i class="fas fa-bars"></i>
 			</a>
 			
 			<div class="navbar-links">
 				<ul>
-					<li><a href="featured-links.html">Featured Links</a></li>
-					<li><a href="ask-me.html">Ask Me</a></li>
-					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="index.html"><i class="fas fa-home fa-sm" id="nav-home"></i> Home </a></li>
+					<li><a href="featured-links.html"><i class="far fa-star" fa-sm></i></i> Featured Links</a></li>
+					<li><a href="ask-me.html"><i class="fas fa-question-circle fa-sm"></i> Ask Me</a></li>
 				</ul>
 			</div>			
 		</nav>
@@ -31,6 +32,28 @@
 	
 	<main>
 		<p>Ask Me</p>
+		
+		<form>
+			
+			<label for="username">Name: </label><br>
+			<input type="text" id="username" name="username" maxlength="30" required><br>
+			
+			<label for="question">Question: </label><br>
+			<input type="text" id="question" name="question" maxlength="100" required><br>
+			
+			<label for="details">Additional Details: </label><br>
+			<input type="text" id="details" name="details" maxlength="250"><br>
+			
+			<label for="notif">Notify you when answer is posted?: </label> 
+			<input type="checkbox" id="notif" name="notif"><br>
+			
+			<label for="email">Email: </label><br>
+			<input type="email" id="email" name="email"><br>
+			
+			<input type="submit" value="Submit">
+		
+		</form>
+		
 	</main>
 </body>
 	
