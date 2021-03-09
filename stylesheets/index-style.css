@@ -14,25 +14,34 @@ a {
 
 
 .profile-info {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 1em;
+	display: flex;
+	width: 500px;
+	margin: auto;
+	justify-content: center;
 }
 
-.profile-images img {
-	width: 100%;	
+.profile-images {
+	padding: 10px;
 }
 
+.profile-bio {
+	padding: 10px;
+}
+
+.profile-image {	
+	width: 100%;
+	border: 5px solid white;
+	border-radius: 50%;
+}
 
 .profile-name {
 	font-family: 'Permanent Marker', cursive;
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .profile-description {
 	font-family: 'Abel', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 .profile-icons {
@@ -42,6 +51,7 @@ a {
 
 .profile-icons a {
 	padding: 5px;
+	color: rgb(157,54,21);
 }
 
 .modal-btn {
@@ -154,5 +164,30 @@ a {
 }
 
 @media (Max-width: 600px) {
+	.profile-info {
+		display: block;
+		margin: auto;
+		text-align: center;
+		width: 90%;
+		padding: 5px;
+	}
+	
+	.profile-bio {
+		margin-top: 0px;
+	}
+	
+	.profile-image {
+		width: 150px;
+		border: 5px solid white;
+		border-radius: 75px;
+	}
+	
+	.profile-name {
+		font-size: 1.4em;
+	}
+	
+	.profile-description {
+		font-size: .9em;
+	}
 	
 }
