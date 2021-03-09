@@ -16,32 +16,21 @@ a {
 .profile-info {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 4fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-gap: 1em;
 }
 
-.profil-images {
-
-}
-
 .profile-images img {
-	width: 100%;
-	max-width: 250px;
-	margin: auto;
-	
+	width: 100%;	
 }
 
-.profile-bio {
-	display: block;
-}
 
 .profile-name {
 	font-family: 'Permanent Marker', cursive;
-	font-size: ;
+	font-size: 1.5em;
 }
 
 .profile-description {
-	margin-top: 5px;
 	font-family: 'Abel', sans-serif;
 	font-size: 1.2em;
 }
@@ -49,7 +38,6 @@ a {
 .profile-icons {
 	display: flex;
   	justify-content: center;
-	margin-top: 0px;
 }
 
 .profile-icons a {
