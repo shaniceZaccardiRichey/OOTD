@@ -13,18 +13,8 @@
 	color:black;
 	position: fixed;
 	top: 0;
-	height: 30px;
+	height: 40px;
 	width: 100%;
-}
-
-.home-nav {
-	padding: 10px;
-}
-
-.home-nav a {
-	text-decoration: none;
-	color: black;
-	height: 100%;
 }
 
 .navbar-links ul {
@@ -40,8 +30,9 @@
 .navbar-links li a {
 	text-decoration: none;
 	color: black;
-	padding: 10px;
+	padding: 25px;
 	display: block;
+	font-family: 'Abel', sans-serif;
 }
 
 .navbar-links li:hover {
@@ -49,9 +40,20 @@
 	border-bottom-color: 5px solid white; 
 }
 
+.navbar-links li a:hover {
+	color: white;
+}
+
 .nav-title {
 	align-items: center; 
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.6em;
 }
+
+.nav-title:hover {
+	color: rgb(157,54,21);
+}
+
 
 .toggle-button {
 	position: absolute;
@@ -65,7 +67,6 @@
 	text-decoration: none;
 	color: black;
 }
-
 
 
 @media (Max-width: 600px) {

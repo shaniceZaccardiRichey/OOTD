@@ -2,9 +2,26 @@
 /* CSS Document */
 
 body {
-	background-color: antiquewhite;
+	background-color: rgb(247,224,192);
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+main h1 {
+	margin-top: 50px;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3em;
+	text-align: center;
+
+   color: black;
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: rgba(157,54,21, .75);
 }
 
 .ask-me {
@@ -24,4 +41,8 @@ body {
 
 #details {
 	height: 75px;
+}
+
+.required {
+	required: true;
 }

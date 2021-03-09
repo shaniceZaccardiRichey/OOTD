@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background-color: antiquewhite;
+	background-color: rgb(247,224,192);
 	margin: 0;
 	padding: 0;
 }
@@ -42,6 +42,30 @@ a {
 .profile-icons a {
 	padding: 5px;
 }
+
+.profile-name {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2em;
+	
+	color: black;
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: rgba(157,54,21, .75);
+}
+
+.profile-bio {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.2em;
+}
+
+.modal-btn {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.2em;
+	background-color: rgb(247,224,192);
+	border: none;
+	color: rgb(157,54,21);
+}
+
 
 .picture-grid {
 	display: grid;
@@ -101,6 +125,7 @@ a {
 	width: 95%;
 	height: 95%;
 	display: flex;
+	flex-direction: column;
 	justify-content:center;
 	align-items: center;
 	max-width: 500px;
@@ -115,8 +140,31 @@ a {
 	cursor: pointer;
 }
 
-.modal div {
-	display: block;
+.modal table, th, td {
+	border: 1px solid black;
+}
+
+.modal table {
+	border: 2px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.modal p {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.2em;
+}
+
+.modal th {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.2em;
+	padding: 5px;
+}
+
+.modal td {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.2em;
+	padding: 5px;
 }
 
 @media (Max-width: 600px) {
