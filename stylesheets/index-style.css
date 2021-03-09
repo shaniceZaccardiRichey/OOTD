@@ -12,50 +12,48 @@ a {
 	color: black;
 }
 
+
 .profile-info {
-    display: grid;
-	margin-left: auto;
-	margin-right: auto;
-    grid-template-columns: 2fr 1fr 3fr;
-    grid-gap: 20px;
-	margin-bottom: 20px;
-}
-
-.profile-info a {
-	color: rgb(157,54,21)
-}
-
-.profile-image {
 	display: grid;
-	justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4fr 1fr;
+	grid-gap: 1em;
 }
 
-.profile-image img {
+.profil-images {
+
+}
+
+.profile-images img {
 	width: 100%;
+	max-width: 250px;
+	margin: auto;
+	
+}
+
+.profile-bio {
+	display: block;
+}
+
+.profile-name {
+	font-family: 'Permanent Marker', cursive;
+	font-size: ;
+}
+
+.profile-description {
+	margin-top: 5px;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.2em;
 }
 
 .profile-icons {
 	display: flex;
   	justify-content: center;
+	margin-top: 0px;
 }
 
 .profile-icons a {
 	padding: 5px;
-}
-
-.profile-name {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 2em;
-	
-	color: black;
-   -webkit-text-fill-color: white; 
-   -webkit-text-stroke-width: .5px;
-   -webkit-text-stroke-color: rgba(157,54,21, .75);
-}
-
-.profile-bio {
-	font-family: 'Abel', sans-serif;
-	font-size: 1.2em;
 }
 
 .modal-btn {
@@ -91,7 +89,7 @@ a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
+	margin-top: 50px;
 	width: 75%;
 	/*background-color: rgba(255,255,255,.5);*/
 	padding: 10px;
@@ -168,11 +166,5 @@ a {
 }
 
 @media (Max-width: 600px) {
-	.profile-info {
-		grid-template-columns: 1fr 1fr 3fr;
-	}
 	
-	.profile-images {
-		grid-template-columns: 1fr 2fr;
-	}
 }
