@@ -163,6 +163,23 @@ a {
 	padding: 5px;
 }
 
+.footer-home {
+	display: block;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.5em;
+}
+
+.footer-home:hover {
+	color: rgb(157,54,21);
+}
+
+.footer-credit {
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+	font-size: 1em;
+}
+
 @media (Max-width: 600px) {
 	.profile-info {
 		display: block;
