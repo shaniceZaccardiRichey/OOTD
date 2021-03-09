@@ -6,24 +6,31 @@
 	
 }
 
-
-
-
-.central-content {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	width: 75%;
-	/*background-color: rgba(255,255,255,.5);*/
-	padding: 10px;
-	max-width: 1100px;
+body {
+	background-color: antiquewhite;
+	margin: 0;
+	padding: 0;
 }
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.outfit-image img {
+	display: block;
+	margin: auto;
+	width: 75%;
+	max-width: 500px;
+}
+
 
 .outfit-links {
 	border: 1px solid red;
 	padding: 10px;
 	max-width: 400px;
+	display: block;
+	margin: auto;
 }
 
 .item-link {
@@ -31,17 +38,23 @@
 	padding: 10px;
 	display: flex;
 	border-radius: 20px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 .item-category {
 	border: 1px solid black;
 	padding: 10px;
+	margin: auto;
 	width: 25%;
 	border-radius: 20px;
+	min-width: 100px;
+	text-align: center;
 }
 
 .item-name {
-	
 	padding: 10px;
 	width: 75%;
+	text-align: left;
+	object-fit: contain;
 }
